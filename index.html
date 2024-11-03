@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Debugging HTML Practice
+    <title>Debugging HTML Practice</title> <!--BUG #1-->
   </head>
   <body>
     <div class='profile'>
-        <h6>Profile Name</h6>
+        <h1>Profile Name</h1> <!--BUG #2-->
         <div class='address'>Address</div>
 
         <div class='contact'>
@@ -17,12 +17,12 @@
 
         <div class='categories'>
           <h2>Categories</h2>
-          <li>
-            <ul>Lorem ipsum</ul>
-            <ul>dolor sit</ul>
-            <ul>amet</ul>
-            <ul>dolor sit</ul>
-          </li>
+          <ul><!--BUG #3-->
+            <li>Lorem ipsum</li><!--BUG #4-->
+            <li>dolor sit</li><!--BUG #5-->
+            <li>amet</li><!--BUG #6-->
+            <li>dolor sit</li><!--BUG #7-->
+          </ul>
         </div>
 
       </div>
@@ -37,6 +37,7 @@
           cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
           est laborum.
         </p>
+        <p style="color:red; text-align: center;">Text</p><!--BUG #9-->
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -52,7 +53,7 @@
 
         <div class='footer-3-wide'>
           <ul>
-            <ol>
+            <li><!--BUG #8-->
               <a href='https://www.example.com/' target='_blank'>
                 Lorem ipsum dolor sit amet
               </a>
